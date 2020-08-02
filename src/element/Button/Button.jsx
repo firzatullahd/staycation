@@ -11,9 +11,9 @@ export default function Button(props) {
   if (props.hasShadow) className.push("btn-shadow");
 
   const onClick = () => {
-    if (props.onClick) props.onClick;
+    if (props.onClick) props.onClick();
   };
-  if (props.isDisabled || isLoading) {
+  if (props.isDisabled || props.isLoading) {
     if (props.isDisabled) className.push("disabled");
     return (
       <span className={className.join(" ")} style={props.style}>
