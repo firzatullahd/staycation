@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import LandingPage from './pages/LandingPage'
+// import Button from './element/Button/Button'
 import './assets/scss/style.scss';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Router>
         <Route path="/" component={LandingPage}></Route>
       </Router>
+
     </div>
   );
 }

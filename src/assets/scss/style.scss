@@ -44,6 +44,7 @@
 @import "spinners";
 @import "utilities";
 @import "print";
+@import "./container-grid";
 
 .brand-text-icon {
   font-size: 26px;
@@ -61,6 +62,7 @@ header {
   border-bottom: 1px solid $gray-200;
   width: 100%;
   position: relative;
+  margin-bottom: 70px;
 
   .navbar {
     height: 80px;
@@ -89,4 +91,12 @@ header {
       }
     }
   }
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+.card {
+  height: 100%;
 }
