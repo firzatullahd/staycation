@@ -1,15 +1,15 @@
 /*!
- * Bootstrap v4.5.0 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+* Bootstrap v4.5.0 (https://getbootstrap.com/)
+* Copyright 2011-2020 The Bootstrap Authors
+* Copyright 2011-2020 Twitter, Inc.
+* Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #3151df;
   --purple: #6f42c1;
-  --pink: #e83e8c;
+  --pink: #FF498B;
   --red: #dc3545;
   --orange: #fd7e14;
   --yellow: #ffc107;
@@ -520,7 +520,7 @@ mark,
 
 code {
   font-size: 87.5%;
-  color: #e83e8c;
+  color: #FF498B;
   word-wrap: break-word;
 }
 
@@ -5100,7 +5100,6 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
 
@@ -10743,11 +10742,11 @@ a.text-purple:hover, a.text-purple:focus {
 }
 
 .text-pink {
-  color: #e83e8c !important;
+  color: #FF498B !important;
 }
 
 a.text-pink:hover, a.text-pink:focus {
-  color: #c21766 !important;
+  color: #fc005b !important;
 }
 
 .text-red {
@@ -11162,7 +11161,142 @@ section {
   margin-bottom: 70px;
 }
 
+.img-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.img-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
 .card {
   height: 100%;
+}
+
+.card .tag {
+  z-index: 3;
+  font-size: 0.875rem;
+  background-color: #FF498B;
+  padding: 0.25rem 1.25rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  min-height: 30px;
+  border-radius: 0 15px;
+}
+
+.card .tag span {
+  font-weight: 300;
+}
+
+.card .img-wrapper {
+  height: 100%;
+  margin-bottom: 0;
+  border-radius: 0.975rem;
+  overflow: hidden;
+}
+
+.card .meta-wrapper {
+  margin-top: 1rem;
+}
+
+.card .meta-wrapper h5 {
+  font-size: 1.125rem;
+  margin-bottom: 2px;
+}
+
+.card .meta-wrapper span {
+  font-size: 0.85rem;
+}
+
+.card.card-featured {
+  overflow: hidden;
+  cursor: pointer;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.card.card-featured:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .5s transform ease-in-out;
+  transition: .5s transform ease-in-out;
+  z-index: 2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.51)));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.51) 100%);
+  background-repeat: repeat-x;
+}
+
+.card.card-featured .img-wrapper {
+  z-index: 1;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.25s -webkit-transform ease-in-out;
+  transition: 0.25s -webkit-transform ease-in-out;
+  transition: 0.25s transform ease-in-out;
+  transition: 0.25s transform ease-in-out, 0.25s -webkit-transform ease-in-out;
+  border-radius: 15px;
+}
+
+.card.card-featured .meta-wrapper {
+  z-index: 4;
+  color: #fff;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: .3s transform ease-in-out;
+  transition: .3s transform ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card.card-featured .meta-wrapper a {
+  text-decoration: none;
+}
+
+.card.card-featured:hover .meta-wrapper {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.card.card-featured:hover:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.card.card-featured:hover .img-wrapper {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 /*# sourceMappingURL=style.css.map */
