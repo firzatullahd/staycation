@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import Header from "../component/Header";
 import Hero from "../component/Hero";
 import MostPicked from "../component/MostPicked";
+import Categories from "../component/Categories";
 
 import landingPageData from "../json/landingPage.json";
 
@@ -12,7 +13,7 @@ export default class LandingPage extends Component {
   }
   render() {
     // const landingPageData = require("../json/landingPage.json");
-    console.log(landingPageData);
+    // console.log(landingPageData);
     return (
       <Fragment>
         <Header {...this.props}></Header>
@@ -21,6 +22,7 @@ export default class LandingPage extends Component {
           refMostPicked={this.refMostPicked}
           data={landingPageData.mostPicked}
         />
+        <Categories data={landingPageData.categories} />
       </Fragment>
     );
   }
