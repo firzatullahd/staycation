@@ -17,7 +17,7 @@
 
 .stars .star:not(.placeholder) {
   z-index: 2;
-  background-color: #ffc107;
+  background-color: #ffcc47;
 }
 
 .stars .star.placeholder {

@@ -4,6 +4,7 @@ import Hero from "../component/Hero";
 import MostPicked from "../component/MostPicked";
 import Categories from "../component/Categories";
 import Testimony from "../component/Testimony";
+import Footer from "../component/Footer";
 
 import landingPageData from "../json/landingPage.json";
 
@@ -25,6 +26,7 @@ export default class LandingPage extends Component {
         />
         <Categories data={landingPageData.categories} />
         <Testimony data={landingPageData.testimonial} />
+        <Footer />
       </Fragment>
     );
   }
