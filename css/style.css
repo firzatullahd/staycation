@@ -2748,7 +2748,12 @@ textarea.form-control {
 }
 
 .btn {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 400;
   color: #152c5b;
   text-align: center;
@@ -11298,5 +11303,16 @@ section {
 .card.card-featured:hover .img-wrapper {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.testimonial-hero {
+  width: 365px;
+  height: 500px;
+}
+
+.testimonial-hero img {
+  width: 365px;
+  height: 500px;
+  border-radius: 15px 15px 100px 15px;
 }
 /*# sourceMappingURL=style.css.map */

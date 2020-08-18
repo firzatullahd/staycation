@@ -24,7 +24,7 @@ export default class LandingPage extends Component {
           data={landingPageData.mostPicked}
         />
         <Categories data={landingPageData.categories} />
-        <Testimony />
+        <Testimony data={landingPageData.testimonial} />
       </Fragment>
     );
   }
