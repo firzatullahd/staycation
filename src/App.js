@@ -1,16 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import LandingPage from './pages/LandingPage'
-// import Button from './element/Button/Button'
 import './assets/scss/style.scss';
+import InputNumber from './element/Form/InputNumber/InputNumber'
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      {/* <Router>
         <Route path="/" component={LandingPage}></Route>
-      </Router>
-
+      </Router> */}
+      <InputNumber />
     </div>
   );
 }

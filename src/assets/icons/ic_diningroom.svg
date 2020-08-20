@@ -1,0 +1,12 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" fill="white"/>
+<mask id="path-2-inside-1" fill="white">
+<path d="M3 20H45V24C45 25.1046 44.1046 26 43 26H5C3.89543 26 3 25.1046 3 24V20Z"/>
+</mask>
+<path d="M3 20H45V24C45 25.1046 44.1046 26 43 26H5C3.89543 26 3 25.1046 3 24V20Z" fill="#152C5B" stroke="#152C5B" stroke-width="6" mask="url(#path-2-inside-1)"/>
+<path d="M8 24V45" stroke="#152C5B" stroke-width="3" stroke-linecap="round"/>
+<path d="M40 24V45" stroke="#152C5B" stroke-width="3" stroke-linecap="round"/>
+<path d="M33 24V36" stroke="#152C5B" stroke-width="3" stroke-linecap="round"/>
+<path d="M15 24V36" stroke="#152C5B" stroke-width="3" stroke-linecap="round"/>
+<path d="M9 8H39L45 19H3L9 8Z" fill="#152C5B"/>
+</svg>
